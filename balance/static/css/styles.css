@@ -1,0 +1,66 @@
+body {
+    background-repeat: no-repeat;
+
+}
+
+ul {
+    margin-top: 30px;
+}
+
+h1 {
+    margin-top: 30px;
+}
+
+
+.movimientos {
+    border-collapse: collapse;
+    border: 1px solid white;
+    table-layout: fixed; width: 100%;
+    color: black;
+}
+
+th,tr {
+  border: 1px solid white;
+}
+
+.grid {
+    width: 60%;
+    align: center;
+}
+
+.formulario {
+    align=center
+}
+
+.fecha_hora {
+    padding: 10px 0 15px 0;
+    margin: 10px 30px 30px 0;
+}
+
+#status {
+    width: 100%;
+}
+
+
+.imagen {
+    width: 35%;
+}
+
+.calc, .aceptar, .cancelar{
+    border-color: #1095c1;
+}
+
+
+.imagen1 {
+    width: 100%;
+}
+
+.error {
+    color: red;
+    text-align: right;
+}
+
+
+footer {
+    text-align: center;
+}

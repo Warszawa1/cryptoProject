@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block titulo%}
+    Listado
+{% endblock %}
+f
+{% block contenido %}
+    <h1>Listado de trades realizados</h1>
+
+<!--<form action ="http://localhost:5000/result" name=formulario id="formu" method = "POST">-->
+    <table class="movimientos">
+        <tr>
+            <th>Fecha</th>
+            <th>Hora</th>
+            <th>From</th>
+            <th>Qfrom</th>
+            <th>To</th>
+            <th>Qto</th>
+        </tr>
+        {% for movimiento in movimientos %}
+        <tr>
+            <td>{{ movimiento[0] }}</td>
+            <td>{{ movimiento[1] }}</td>
+            <td>{% if movimiento[2] == EUR %} {{ "EUR:Investment" }} {% else %} {{ movimiento[2] }} {% endif %}</td>
+            <td>{{ movimiento[3] }}</td>
+            <td>{% if movimiento[4] == EUR %} {{ "EUR:Retrival" }}  {% else %} {{ movimiento[4] }} {% endif %}</td>
+            <td>{{ movimiento[5] }}</td>
+        </tr>
+        {% endfor%}
+    </table>
+
+    <a href="/alta" role="button">+ Trade</a>
+
+{% endblock %}

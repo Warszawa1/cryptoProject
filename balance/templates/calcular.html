@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block titulo%}
+    Cambio
+{% endblock %}
+
+{% block contenido %}
+    <h1>Cálculo cambio</h1>
+
+    <form action="/calcular" class="formulario" method="post">
+
+        {{ formulario.hidden_tag() }}
+        <div class="grid">
+            {{ formulario.fecha}}
+        </div>
+        <div class="grid">
+            {{ formulario.hora}}
+        </div>
+        <div class="grid">
+            {{ formulario.origen.label() }}
+            {{ formulario.origen.data }}
+        </div>
+        <div class="grid">
+            {{ formulario.Qfrom.label() }}
+            {{ formulario.Qfrom.data }}
+        </div>
+        <div class="grid">
+            {{ formulario.destino.label() }}
+            {{ formulario.destino.data }}
+        </div>
+        <div class="grid">
+            {{ formulario.Qto.label() }}
+            {{ formulario.Qto.data }}
+        </div>
+        <div class="grid">
+<!--            <img src="{{ url_for('static', filename='images/exchange.png') }}" class="imagen"  role="button" >-->
+<!--            </button>-->
+            {{ formulario.aceptar() }}
+            <a href="/alta" role="button">❌</a>
+        </div>
+    </form>
+{% endblock %}

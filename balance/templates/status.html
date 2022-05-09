@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block titulo%}
+    Estado
+{% endblock %}
+
+{% block contenido %}
+    <h1>ESTADO DE LA INVERSIÓN</h1>
+<div class="grid">
+    <h4>Invertido:</h4>
+    {{ invertido }}
+</div>
+<div class="grid">
+    <h4>Valor Actual:</h4>
+    {{ saldo }}
+</div>
+
+
+{% endblock %}

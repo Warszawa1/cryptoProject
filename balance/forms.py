@@ -1,5 +1,3 @@
-from datetime import date
-
 from flask_wtf import FlaskForm
 from wtforms import StringField, DateField, TimeField, SelectField, FloatField, SubmitField, HiddenField
 from wtforms.validators import DataRequired, NumberRange, ValidationError
@@ -15,7 +13,6 @@ date_time_now = datetime.now()
 
 class MovimientosForm(FlaskForm):
     fecha = fecha_now.strftime("%d-%m-%Y")
-    # fecha = HiddenField()
     hora = date_time_now.strftime("%H:%M:%S")
     origen = SelectField("Origen:", choices=[('EUR', 'EUR'), ('BTC', 'BTC'), ('ETH', 'ETH'), ('BNB', 'BNB'), ('BCH', 'BCH'),
                                           ('LINK', 'LINK'), ('LUNA', 'LUNA'), ('ATOM', 'ATOM'), ('SOL', 'SOL'),
@@ -30,4 +27,4 @@ class MovimientosForm(FlaskForm):
     Qto = FloatField("Qto:")
 
     aceptar = SubmitField("ACEPTAR")
-    calcular = SubmitField("CALCULAR")
+

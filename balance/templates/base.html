@@ -10,14 +10,9 @@
 
     <title> myCRYPTO | {% block titulo %}{% endblock %}</title>
 </head>
+
 <body>
-<nav class="container" id="navbar">
-    <ul>
-        <li><a href="/">Inicio</a></li>
-        <li><a href="/alta">Compra</a></li>
-        <li><a href="/status">Status</a></li>
-    </ul>
-</nav>
+
     {% with mensajes = get_flashed_messages() %}
         {% if mensajes %}
         <section class="errores container">
@@ -32,7 +27,8 @@
 
     {% endwith%}
     <section class="container">
-        {% block contenido%}
+
+        {% block contenido %}
         {% endblock %}
     </section>
     <footer>

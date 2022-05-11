@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="74266ebb-562b-49ba-8c8c-40e995345f24" name="Changes" comment="" />
+    <list default="true" id="74266ebb-562b-49ba-8c8c-40e995345f24" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/balance/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/balance/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/balance/routes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/balance/static/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance/templates/alta.html" beforeDir="false" afterPath="$PROJECT_DIR$/balance/templates/alta.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/balance/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance/templates/calcular.html" beforeDir="false" afterPath="$PROJECT_DIR$/balance/templates/calcular.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance/templates/movimientos.html" beforeDir="false" afterPath="$PROJECT_DIR$/balance/templates/movimientos.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balance/templates/status.html" beforeDir="false" afterPath="$PROJECT_DIR$/balance/templates/status.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consultas.py" beforeDir="false" afterPath="$PROJECT_DIR$/consultas.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/datos.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/datos.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/movimientos.db" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,8 +24,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -49,7 +63,7 @@
       <recent name="$PROJECT_DIR$/venv" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.consultas">
+  <component name="RunManager" selected="Python.routes">
     <configuration name="consultas" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="SQLite27.04" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -92,8 +106,30 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="routes" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/local/bin/python3.8" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/balance" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/balance/routes.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.routes" />
         <item itemvalue="Python.consultas" />
       </list>
     </recent_temporary>

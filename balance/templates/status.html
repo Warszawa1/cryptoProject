@@ -5,15 +5,71 @@
 {% endblock %}
 
 {% block contenido %}
+
+<nav class="container" id="navbar">
+    <ul>
+        <li><a href="/">Inicio</a></li>
+        <li><a href="/calcular">Trade</a></li>
+        <li>Status</li>
+    </ul>
+</nav>
+
     <h1>ESTADO DE LA INVERSIÓN</h1>
 <div class="grid">
-    <h4>Invertido:</h4>
-    {{ invertido }}
+    <h4>Invertido (€):</h4>
 </div>
+<div class="gric">
+    {{ amount }}
+</div>
+</br></br>
 <div class="grid">
-    <h4>Valor Actual:</h4>
-    {{ saldo }}
+    <h4>Valor Actual Cryptos:</h4>
 </div>
+
+    <form action="/" method="post">
+        <div class="grid">
+        <label>BTC:</label>
+            {{ amount2 }}
+        </div>
+        <div class="grid">
+        <label>ETH:</label>
+            {{ origen }}
+        </div>
+        <div class="grid">
+        <label>BNB:</label>
+            {{ Qfrom }}
+        </div>
+        <div class="grid">
+        <label>BCH:</label>
+            {{ destino }}
+        </div>
+        <div class="grid">
+        <label>LINK:</label>
+            {{ result }}
+        </div>
+            <div class="grid">
+        <label>LUNA:</label>
+            {{ origen }}
+        </div>
+        <div class="grid">
+        <label>ATOM:</label>
+            {{ Qfrom }}
+        </div>
+        <div class="grid">
+        <label>SOL:</label>
+            {{ destino }}
+        </div>
+        <div class="grid">
+        <label>USDT:</label>
+            {{ result }}
+        </div>
+
+    </br>
+
+    <div class="grid">
+        <a href="/" role="button">❌</a>
+    </div>
+    </form>
 
 
 {% endblock %}

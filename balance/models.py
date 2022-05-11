@@ -1,7 +1,5 @@
 import sqlite3
 
-coin_list = ['BTC', 'ETH', 'BNB', 'BCH', 'LINK', 'LUNA', 'ATOM', 'SOL', 'USDT']
-
 
 class ProcesaDatos:
 
@@ -18,6 +16,21 @@ class ProcesaDatos:
 
         return cur.fetchall()
 
+    def investment(self):
+        con = sqlite3.connect("data/datos.db")
+        cur = con. cursor()
+
+        cur.execute("""
+                    SELECT Qfrom;
+                    FROM movements;
+                    WHERE origen="EUR"
+                    """
+                    )
+
+        amount = cur.fetchall()
+        return amount
+
+
     def graba_datos(self, params):
         con = sqlite3.connect("data/datos.db")
         cur = con.cursor()
@@ -28,6 +41,9 @@ class ProcesaDatos:
 
         con.commit()
         con.close()
+
+
+
 
 
 

@@ -25,17 +25,13 @@ th,tr {
 
 .grid {
     width: 60%;
-    align: center;
+    padding: 5px;
 }
 
-.formulario {
+.form {
     align=center
 }
 
-.fecha_hora {
-    padding: 10px 0 15px 0;
-    margin: 10px 30px 30px 0;
-}
 
 #status {
     width: 100%;

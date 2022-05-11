@@ -1,42 +1,67 @@
-{% extends "base.html" %}
+{% extends "base.html"%}
 
-{% block titulo%}
-    Cambio
+{% block titulo %}
+    New trade
 {% endblock %}
 
 {% block contenido %}
-    <h1>Cálculo cambio</h1>
 
-    <form action="/calcular" class="formulario" method="post">
+<nav class="container" id="navbar">
+    <ul>
+        <li><a href="/">Inicio</a></li>
+        <li>Trade</li>
+        <li><a href="/status">Status</a></li>
+    </ul>
+</nav>
 
-        {{ formulario.hidden_tag() }}
-        <div class="grid">
-            {{ formulario.fecha}}
+    <h1>Python CryptoConverter</h1>
+
+    <form method="post" action="{{ url_for('resultado') }}" id="CryptosForm">
+        <label for="origen">origen:</label>
+        <select name="origen" id="origen">
+            <option value="EUR">EUR</option>
+            <option value="BTC">BTC</option>
+            <option value="ETH">ETH</option>
+            <option value="BNB">BNB</option>
+            <option value="LUNA">LUNA</option>
+            <option value="SOL">SOL</option>
+            <option value="BCH">BCH</option>
+            <option value="LINK">LINK</option>
+            <option value="ATOM">ATOM</option>
+            <option value="USDT">USDT</option>
+        </select>
+        <br/>
+        <div>
+            <label for="Qfrom">Qfrom:</label>
+            <input type="number" name="Qfrom" id="Qfrom" min="0" step="0.01" value="0.00">
         </div>
-        <div class="grid">
-            {{ formulario.hora}}
-        </div>
-        <div class="grid">
-            {{ formulario.origen.label() }}
-            {{ formulario.origen.data }}
-        </div>
-        <div class="grid">
-            {{ formulario.Qfrom.label() }}
-            {{ formulario.Qfrom.data }}
-        </div>
-        <div class="grid">
-            {{ formulario.destino.label() }}
-            {{ formulario.destino.data }}
-        </div>
-        <div class="grid">
-            {{ formulario.Qto.label() }}
-            {{ formulario.Qto.data }}
-        </div>
-        <div class="grid">
-<!--            <img src="{{ url_for('static', filename='images/exchange.png') }}" class="imagen"  role="button" >-->
-<!--            </button>-->
-            {{ formulario.aceptar() }}
-            <a href="/alta" role="button">❌</a>
-        </div>
+        <label for="destino">destino:</label>
+        <select name="destino" id="destino">
+            <option value="EUR">EUR</option>
+            <option value="BTC">BTC</option>
+            <option value="ETH">ETH</option>
+            <option value="BNB">BNB</option>
+            <option value="LUNA">LUNA</option>
+            <option value="SOL">SOL</option>
+            <option value="BCH">BCH</option>
+            <option value="LINK">LINK</option>
+            <option value="ATOM">ATOM</option>
+            <option value="USDT">USDT</option>
+        </select>
+
+        </br>
+        <br/>
+        <div>Qto: {{ result }}</div>
+
+    </br></br>
+    <div class="grid">
+        <input type="submit" value="Aceptar"/>
+        <input type="reset"  value="Reset"/>
+        <a href="/" role="button">❌</a>
+    </div>
     </form>
+</br>
+</br>
+
+
 {% endblock %}

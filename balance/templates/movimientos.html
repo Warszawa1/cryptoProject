@@ -3,8 +3,17 @@
 {% block titulo%}
     Listado
 {% endblock %}
-f
+
 {% block contenido %}
+
+<nav class="container" id="navbar">
+    <ul>
+        <li>Inicio</li>
+        <li><a href="/calcular">Trade</a></li>
+        <li><a href="/status">Status</a></li>
+    </ul>
+</nav>
+
     <h1>Listado de trades realizados</h1>
 
 <!--<form action ="http://localhost:5000/result" name=formulario id="formu" method = "POST">-->
@@ -19,16 +28,16 @@ f
         </tr>
         {% for movimiento in movimientos %}
         <tr>
-            <td>{{ movimiento[0] }}</td>
-            <td>{{ movimiento[1] }}</td>
-            <td>{% if movimiento[2] == EUR %} {{ "EUR:Investment" }} {% else %} {{ movimiento[2] }} {% endif %}</td>
-            <td>{{ movimiento[3] }}</td>
-            <td>{% if movimiento[4] == EUR %} {{ "EUR:Retrival" }}  {% else %} {{ movimiento[4] }} {% endif %}</td>
-            <td>{{ movimiento[5] }}</td>
+            <td>{{ fecha }}</td>
+            <td>{{ hora }}</td>
+            <td>{{ origen }}</td>
+            <td>{{ Qfrom }}</td>
+            <td>{{ destino }}</td>
+            <td>{{ Qto }}</td>
         </tr>
         {% endfor%}
     </table>
 
-    <a href="/alta" role="button">+ Trade</a>
+    <a href="/calcular" role="button">+ Trade</a>
 
 {% endblock %}

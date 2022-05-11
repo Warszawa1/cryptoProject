@@ -34,3 +34,10 @@
 * DEPLOYMENT
   - Deployment needs to be done on a WSGI Server
     --- https://wsgi.readthedocs.io/en/latest/servers.html
+    
+    
+![Screenshot 2022-05-10 at 22 39 03](https://user-images.githubusercontent.com/48474962/167936083-845bcbb0-d6b7-4e22-8972-cbf6d58d01ed.png)
+![Screenshot 2022-05-05 at 12 38 49](https://user-images.githubusercontent.com/48474962/167936163-1fafcb3a-029e-4fa5-9971-3871f8b963ee.png)
+![Screenshot 2022-05-11 at 21 54 38](https://user-images.githubusercontent.com/48474962/167936188-22b9658f-894d-4628-a5dd-46c39199a015.png)
+
+

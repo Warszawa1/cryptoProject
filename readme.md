@@ -7,10 +7,13 @@
 
 * PREREQUISITES
   - Python3
+  - SQLite3
   - virtualenv
 <hr>
   
 * INSTALLING
+  - Set up a separate Virtual Environment for the repository.
+    - virtualenv env
   - Activate the Virtual Environment
     - env/bin/activate (for Linux)
     - env/Scripts/activate (for Windows)

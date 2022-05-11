@@ -27,6 +27,8 @@
   
   - Run the application using:
     - flask run 
+          OR
+    - python -m flask run
 <hr> 
     
 * DEPLOYMENT

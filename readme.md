@@ -27,7 +27,7 @@
   
   - Run the application using:
     - flask run 
-          OR
+    -     OR
     - python -m flask run
 <hr> 
     
